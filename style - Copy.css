@@ -1,0 +1,155 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+}
+body{
+    overflow: hidden;
+}
+.page1{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-image: url(images/bgimg.avif);
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar h2{
+    font-size: 3.3vw;
+    font-weight: 600;
+    background: none;
+}
+.navbar h4{
+    font-size: 2.4vw;
+    font-weight: 100;
+    background: none;
+}
+.navbar{
+    height: 10vh;
+    width: 100vw;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    padding-right: 2.4vw;
+    position: fixed;
+    background-color: #000000;
+}
+#home:hover{
+    color: #B197FC;
+    font-size: 2.3vw;
+    transition: 0.3s;
+    font-weight: 500;
+}
+#projects:hover{
+    color: #B197FC;
+    font-size: 2.3vw;
+    transition: 0.3s;
+    font-weight: 500;
+}
+#blog:hover{
+    color: #B197FC;
+    font-size: 2.3vw;
+    transition: 0.3s;
+    font-weight: 500;
+}
+#contact:hover{
+    color: #B197FC;
+    font-size: 2.3vw;
+    transition: 0.3s;
+    font-weight: 500;
+}
+#logo:hover{
+    color: #B197FC;
+    font-size: 3.1vw;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.part2{
+    display: flex;
+    align-items: center;
+    gap: 2.3vw;
+}
+#menu{
+    display: none;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar i{
+    color: #B197FC;
+}
+/* .navbar #profile{
+    font-size: 2vw;
+    cursor: pointer;
+} */
+
+@media (max-width:650px){
+    .navbar h2{
+        font-size: 4vw;
+        font-weight: bolder
+    }
+    .navbar h4, #profile{
+        display: none;
+    }
+    #menu{
+        display: block;
+        font-size: 4vw;
+        cursor: pointer;
+    }
+    .navbar{
+        height: 6vh;
+    }
+}
+.menusidebar{
+    background-color: rgba(0, 0, 0, 0.331);
+    backdrop-filter: blur(3px);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: -100vw;
+    padding: 50px;
+    padding-right: 5vw;
+    padding-left: 30px;
+    align-content: center;
+}
+.menusidebar a{
+    text-decoration: none;
+}
+.menusidebar h4{
+    font-size: 10vw;
+    background: none;
+    padding-bottom: 10px;
+    color: #f2f0f0;
+    text-decoration: underline;
+}
+.menusidebar i{
+    background: none;
+    position: absolute;
+    top: 13vh;
+    right: 8vw;
+    font-size: 20vw;
+    font-size: 5vw;
+    color: #ffffff;
+    cursor: pointer;
+}
+.leftcontent{
+    height: 100vh;
+    width: 50vw;
+    background-color: crimson;
+    opacity: 50%;
+}
+.rightcontent{
+    height: 100vh;
+    width: 50vw;
+    background-color: royalblue;
+    opacity: 50%;
+}
